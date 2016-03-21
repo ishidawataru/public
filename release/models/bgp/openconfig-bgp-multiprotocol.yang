@@ -715,16 +715,8 @@ module openconfig-bgp-multiprotocol {
       // import and export policy included for the afi/safi
       uses rpol:apply-policy-group;
 
-      uses ipv4-unicast-group;
-      uses ipv6-unicast-group;
-      uses ipv4-labelled-unicast-group;
-      uses ipv6-labelled-unicast-group;
-      uses l3vpn-ipv4-unicast-group;
-      uses l3vpn-ipv6-unicast-group;
-      uses l3vpn-ipv4-multicast-group;
-      uses l3vpn-ipv6-multicast-group;
-      uses l2vpn-vpls-group;
-      uses l2vpn-evpn-group;
+      uses all-afi-safi-common;
+
     }
   }
 }
